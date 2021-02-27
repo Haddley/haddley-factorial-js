@@ -3,7 +3,7 @@ const factorial = (n) => {
     return n * factorial(n - 1);
 }
 
-exports.factorial=factorial
+exports.factorial = factorial
 
 const factorial_tr = (n) => {
 
@@ -15,4 +15,22 @@ const factorial_tr = (n) => {
     return fact(n, 1)
 }
 
-exports.factorial_tr=factorial_tr
+exports.factorial_tr = factorial_tr
+
+const factorial_it = (n) => {
+
+    let acc = 1
+
+    for (i = n; i > 1; i--) {
+        acc = acc * i
+    }
+
+    return acc
+}
+
+exports.factorial_it = factorial_it
+
+// nearly too much
+// console.log(factorial_tr(10470))
+// too much
+// console.log(factorial_tr(10471))
